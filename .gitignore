@@ -1,3 +1,4 @@
 .DS_Store
-screenshot/
-css/
+/screenshot/
+/css/
+/about.css
