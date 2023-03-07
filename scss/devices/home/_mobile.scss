@@ -1,0 +1,65 @@
+@media (min-width: $mobileScreen) {
+    img {
+        width: 30%;
+    }
+
+    header {
+        background-image: url(/img/header.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 45vh;
+    }
+
+    header > section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 3vh;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(50, 50, 50, .8);
+    }
+
+    header > section > aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1vh;
+    }
+
+    header h1 {
+        font-size: 40px;
+        width: 50%;
+        color: whitesmoke;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    header h3 {
+        color: orangered;
+        font-size: 25px;
+    }
+
+    header form {
+        width: 100%;
+    }
+
+    header form > aside {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    header input {
+        display: flex;
+        padding: 5%;
+        border: none;
+    }
+
+    header [type="submit"] {
+        color: whitesmoke;
+        background-color: orangered;
+    }
+}
