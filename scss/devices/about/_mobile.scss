@@ -1,21 +1,32 @@
+img {
+  width: 20%;
+}
 main,
 main > section,
+figure,
+figcaption,
+main > section > section,
 body > aside,
 body {
   display: flex;
   flex-direction: column;
 }
 
-@media (min-width: $mobileScreen) {
-
+@media (min-width: 300px) {
+  main,
+  main > section,
   body > nav > aside,
   body > aside,
   body > aside > ul,
-  body > aside li {
+  body > aside li,
+  figure,
+  figcaption {
     align-items: center;
     justify-content: center;
   }
-
+  main {
+    flex-wrap: wrap;
+  }
   body > aside {
     flex-wrap: wrap;
     background-color: #1F1F2E;
@@ -113,4 +124,125 @@ body {
     font-size: 26px;
     color: dimgray;
   }
+  /* LEFT  */
+  .left {
+    width: 90%;
+    row-gap: 4vh;
+    padding: 20% 0;
+  }
+  .left figcaption {
+    row-gap: 2vh;
+    width: 90%;
+    padding: 8% 5%;
+    background-color: #F2F2F4;
+  }
+  .left figcaption > section {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .left figcaption a {
+    display: flex;
+    width: 100%;
+    font-weight: 600;
+    color: orangered;
+  }
+  .left figcaption aside {
+    display: flex;
+    column-gap: 2vh;
+    color: dimgray;
+  }
+  .left figcaption p {
+    color: dimgray;
+    line-height: 1.5;
+  }
+  .left [class*='fa-'] {
+    color: orangered;
+    font-size: 25px;
+  }
+  .left img {
+    width: 100%;
+  }
+  /* LEFT END */
+  /* RIGHT  */
+  .right {
+    width: 90%;
+    row-gap: 5vh;
+    border: 1px solid black; 
+  }
+  .right > form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 10vh;
+    padding: 5%;
+    background-color: #F2F2F4;
+  }
+  .right > form > input {
+    width: 80%;
+    padding: 5% 3%;
+    font-size: 18px;
+  }
+  .right > form > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    width: 15%;
+    height: 85%;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: orangered;
+    color: whitesmoke;
+  }
+  /* CATEGORIES  */
+  .categories {
+    width: 100%;
+    row-gap: 4vh;
+  }
+  .categories > h3 {
+    display: flex;
+    width: 100%;
+    font-size: 25px;
+  }
+  .categories > article {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+    padding: 8%;
+    background-color: #F2F2F4;
+  }
+  .categories > article > aside {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    padding: 5%;
+    background-color: white;
+  }
+  .categories article p {
+    display: flex;
+    column-gap: 1vh;
+    align-items: center;
+    width: 100%;
+    color: orangered;
+    font-weight: 800;
+  }
+  .categories article a {
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+    
+  }
+  .categories article span{
+    font-weight: 700;
+    width: 15%;
+    height: 10%;
+    padding: 1%;
+    background-color: #F2F2F4;
+    text-align: center;
+  }
+
+  /* CATEGORIES END  */
+  /* RIGHT END  */
 }
