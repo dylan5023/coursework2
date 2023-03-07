@@ -43,6 +43,7 @@ body {
   }
   body > aside > ul:last-child {
     width: 50%;
+    display: none;
   }
   body > aside li {
     display: flex;
@@ -129,6 +130,9 @@ body {
     width: 90%;
     row-gap: 4vh;
     padding: 20% 0;
+  }
+  .left > figure {
+    width: 100%;
   }
   .left figcaption {
     row-gap: 2vh;
