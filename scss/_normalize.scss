@@ -113,3 +113,46 @@ footer{
 footer h3{
   color: $titlecolor;
 }
+
+main,
+main > section,
+main > section > aside,
+section > article{
+  @include column(0);
+}
+h4{
+  text-transform: uppercase;
+  color: $titlecolor;
+}
+h2{
+  color: $bg2color;
+}
+.quote{
+  background-color: $bg1color;
+}
+h5{
+  color: $titlecolor;
+}
+h6{
+  color: $bg2color;
+}
+
+.quote{
+  input[type=submit]{
+    background-color: $bg2color;
+    color: whitesmoke;
+    border: 2px solid $bg2color;
+  }
+}
+
+.pricing{
+  li{
+    color: dimgray;
+  }
+}
+p{
+  color: dimgray;
+}
+a{
+  text-decoration: none;
+}
