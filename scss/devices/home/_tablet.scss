@@ -12,6 +12,43 @@
         }
     }
 
+    .about article,
+    .choose-us article {
+        
+        small {
+            font-size: 16px;
+        }
+    
+        h3 {
+            font-size: 40px;
+        }
+    }
+
+    // CHOOSE-US
+    .choose-us {
+        > figure {
+            row-gap: 3vh;
+            padding-bottom: 4vh;
+        }
+
+        // img {
+        //     width: 55vh;
+        //     height: 60vh;
+        // }
+
+        a {
+            width: 15%;
+            padding: 1.5vw;
+            transition: .6s;
+        }
+
+        a:hover {
+            cursor: pointer;
+            background-color: gainsboro;
+            color: orangered;
+        }
+    }
+
     // TEAM
     .team {
         > aside {

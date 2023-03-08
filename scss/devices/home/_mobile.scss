@@ -171,11 +171,15 @@
             > section {
                 @include column (1vh);
             }
-
-            aside {
-                display: flex;
-                align-items: center;
-                column-gap: 2vh;
+        }
+        
+        aside {
+            display: flex;
+            align-items: center;
+            column-gap: 2vh;
+            > p {
+                color: black;
+                font-weight: 600;
             }
         }
 
@@ -186,6 +190,7 @@
             padding: 3vw;
             display: flex;
             @include center;
+            border: 3px solid orangered;
         }
     }
     
