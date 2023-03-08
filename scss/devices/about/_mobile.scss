@@ -170,7 +170,6 @@ body {
   .right {
     width: 90%;
     row-gap: 5vh;
-    border: 1px solid black; 
   }
   .right > form {
     display: flex;
@@ -197,15 +196,17 @@ body {
     color: whitesmoke;
   }
   /* CATEGORIES  */
+  .categories,
   .recent,
   .cloud,
-  .categories {
+  .plain {
     width: 100%;
     row-gap: 4vh;
   }
+  .categories > h3,
   .recent > h3,
   .cloud > h3,
-  .categories > h3 {
+  .plain > h3 {
     display: flex;
     width: 100%;
     font-size: 23px;
@@ -294,4 +295,28 @@ body {
     }
   }
   // CLOUD END 
+  // PLAIN 
+  .plain {
+    > article {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2vh;
+      padding: 7%;
+      background-color: #F2F2F4;
+      text-align: center;
+      @include center;
+      > p {
+        color: dimgray;
+        line-height: 1.5;
+      }
+      > a {
+        width: 40%;
+        background-color: orangered;
+        padding: 3%;
+        color: whitesmoke;
+        text-decoration: none;
+      }
+    }
+  }
+  // PLAIN END 
 }
