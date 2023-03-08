@@ -8,8 +8,7 @@ figcaption,
 main > section > section,
 body > aside,
 body {
-  display: flex;
-  flex-direction: column;
+  @include column;
 }
 
 @media (min-width: $mobileScreen) {
@@ -21,8 +20,7 @@ body {
   body > aside li,
   figure,
   figcaption {
-    align-items: center;
-    justify-content: center;
+    @include center(center, center);
   }
   main {
     flex-wrap: wrap;
@@ -43,7 +41,6 @@ body {
   }
   body > aside > ul:last-child {
     width: 50%;
-    display: none;
   }
   body > aside li {
     display: flex;

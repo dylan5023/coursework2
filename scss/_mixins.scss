@@ -3,7 +3,7 @@
     flex-direction: column;
 }
 
-@mixin center ($alighItems, $justifyContent) {
+@mixin center ($alignItems, $justifyContent) {
     display: flex;
     align-items: $alignItems;
     justify-content: $justifyContent;
