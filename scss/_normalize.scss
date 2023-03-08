@@ -23,7 +23,6 @@ header > section {
 
 header > section {
   @include center;
-  row-gap: 3vh;
   width: 100%;
   height: 100%;
   background-color: rgba(50, 50, 50, .8);
