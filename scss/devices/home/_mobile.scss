@@ -15,12 +15,25 @@
         > article {
             @include column (1vh);
             @include center;
-    
+
             small {
                 color: orangered;
                 font-weight: 800;
             }
     
+            h3 {
+                font-size: 30px;
+            }
+        }
+
+        article {
+            @include column (1vh);
+            
+            small {
+                color: orangered;
+                font-weight: 800;
+            }
+
             h3 {
                 font-size: 30px;
             }
@@ -73,6 +86,45 @@
                 color: whitesmoke;
                 background-color: orangered;
             }
+        }
+    }
+
+    // CHOOSE-US
+    .choose-us {
+        > figure {
+            @include column (5vh);
+            @include center;
+            background-color: gainsboro;
+            padding-bottom: 7vh;
+        }
+
+        img {
+            width: 85%;
+        }
+
+        figcaption {
+            @include column (3vh);
+            width: 85%;
+
+            > section {
+                @include column (1vh);
+            }
+
+            aside {
+                display: flex;
+                align-items: center;
+                column-gap: 2vh;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: whitesmoke;
+            background-color: orangered;
+            width: 35%;
+            padding: 3vw;
+            display: flex;
+            @include center;
         }
     }
     
