@@ -1,0 +1,30 @@
+@media (min-width:200px){
+    /* footer */
+    .form{
+        @include column(5vh);
+        align-items: center;
+        > aside{
+            width: 90%;
+        }
+    }
+    footer{
+        padding-top: 13vh;
+
+        [class$=right]{
+            font-size: .7rem;
+        }
+        
+    }
+    .social{
+        @include column(3vh);
+        text-align: center;
+        align-items: center;
+        padding-bottom: 5vh;
+
+        ul{
+            display: flex;
+            width: 85%;
+            justify-content: space-around;
+        }
+    }
+}
