@@ -113,6 +113,9 @@ footer{
 footer h3{
   color: $titlecolor;
 }
+main{
+  align-items: center
+}
 
 main,
 main > section,
@@ -135,6 +138,9 @@ h5{
 }
 h6{
   color: $bg2color;
+}
+li{
+  list-style-type: none;
 }
 
 .quote{
