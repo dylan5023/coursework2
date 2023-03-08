@@ -3,7 +3,7 @@
         width: 30%;
     }
 
-    header > section > aside {
+    [data-bind="monika"] > section > aside {
         display: flex;
         flex-direction: column;
         align-items: center;
