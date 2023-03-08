@@ -129,6 +129,7 @@ body {
   }
   .left > figure {
     width: 100%;
+    row-gap: 0;
   }
   .left figcaption {
     row-gap: 2vh;
@@ -181,11 +182,11 @@ body {
     width: 80%;
     padding: 5% 3%;
     font-size: 18px;
+    border: 1px solid transparent;
   }
   .right > form > a {
     display: flex;
     @include center;
-    border: 1px solid black;
     width: 15%;
     height: 85%;
     font-size: 18px;

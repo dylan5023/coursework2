@@ -1,0 +1,44 @@
+@media (min-width: $tabletScreen) {
+  body {
+    > aside {
+      height: 8vh;
+      > ul {
+        width: 50%;
+        column-gap: 0;
+        > li {
+          width: 80%;
+        }
+      }
+      > ul:last-child {
+        width: 30%;
+      }
+      span {
+        text-align: left;
+      }
+    }
+  }
+  .left {
+    padding: 10% 0;
+
+    figcaption {
+        align-items: flex-start;
+        
+        > section {
+          justify-content: left;
+          column-gap: 4vh;
+        }
+    }
+  }
+  .right {
+    > form {
+      height: 8vh;
+      > input {
+        padding: 3%;
+      }
+      > a {
+        height: 75%;
+        width: 10%;
+      }
+    }
+  }
+}
