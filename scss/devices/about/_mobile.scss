@@ -278,6 +278,19 @@ body {
       width: 100%;
       display: flex;
       flex-wrap: wrap;
+      gap: 1vh;
+      
+      > span {
+        background-color: #F2F2F4;
+        padding: 2% 3%;
+      }
+    }
+    > figure {
+      padding-top: 4%;
+      width: 100%;
+      > img {
+        width: 100%;
+      }
     }
   }
   // CLOUD END 
