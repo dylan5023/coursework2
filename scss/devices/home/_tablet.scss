@@ -11,6 +11,32 @@
             }
         }
     }
+
+    // TEAM
+    .team {
+        > aside {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            width: 100%;
+        }
+
+        figure {
+            width: 40%;
+            > figcaption {
+                height: 10vh;
+                row-gap: 1vh;
+            }
+        }
+
+        strong {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
     
     // BLOG
     .blog {
