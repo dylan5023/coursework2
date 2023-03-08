@@ -18,11 +18,15 @@ header {
 
 header,
 header > section {
-  @include column
+  @include column (1vh);
 }
 
 header > section {
-  @include center (center, center)
+  @include center;
+  row-gap: 3vh;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(50, 50, 50, .8);
 }
 
 header h1 {
