@@ -5,15 +5,15 @@
       > ul {
         width: 50%;
         column-gap: 0;
-        > li {
-          width: 80%;
-        }
       }
       > ul:last-child {
         width: 30%;
       }
       span {
         text-align: left;
+      }
+      li {
+        width: 80%;
       }
     }
   }

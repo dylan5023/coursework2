@@ -8,7 +8,7 @@ figcaption,
 main > section > section,
 body > aside,
 body {
-  @include column(4vh);
+  @include column(0);
 }
 
 @media (min-width: $mobileScreen) {
@@ -69,7 +69,7 @@ body {
     align-items: center;
     justify-content: space-between;
     position: relative;
-    height: 3vh;
+    height: 10vh;
   }
   nav > a,
   nav > ul {
