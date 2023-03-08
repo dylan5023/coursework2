@@ -68,7 +68,7 @@
     // RECENT 
     .recent {
       > figure {
-        width: 80%;
+        width: 75%;
         justify-content: left;
 
         > img {
@@ -86,5 +86,15 @@
         }
       }
     }
+    // CLOUD 
+    .cloud {
+      > aside {
+        > span {
+          padding: 1% 2%;
+          font-size: 18px;
+        }
+      }
+    }
+    // CLOUD END 
   }
 }
