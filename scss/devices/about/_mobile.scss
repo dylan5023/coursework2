@@ -8,8 +8,7 @@ figcaption,
 main > section > section,
 body > aside,
 body {
-  display: flex;
-  flex-direction: column;
+  @include column(4vh);
 }
 
 @media (min-width: $mobileScreen) {
@@ -70,8 +69,7 @@ body {
     align-items: center;
     justify-content: space-between;
     position: relative;
-    border: 1px solid black;
-    height: 10vh;
+    height: 3vh;
   }
   nav > a,
   nav > ul {
@@ -199,7 +197,8 @@ body {
   .categories,
   .recent,
   .cloud,
-  .plain {
+  .plain,
+  .bottom {
     width: 100%;
     row-gap: 4vh;
   }
@@ -319,4 +318,56 @@ body {
     }
   }
   // PLAIN END 
+  // BOTTOM 
+  .bottom {
+    width: 90%;
+    > figure {
+      display: flex;
+      width: 80%;
+      > img {
+        width: 100%;
+        height: 80vh;
+      }
+    }
+    > article {
+      @include column(1vh);
+      > h6 {
+        color: orangered;
+        font-size: 17px;
+        font-weight: 800;
+      }
+      > h3 {
+        font-weight: 900;
+        font-size: 25px;
+        width: 70%;
+      }
+      > form {
+        @include column(2vh);
+        background-color: #F2F2F4;
+        padding: 7%;
+
+        > input {
+          color: dimgray;
+          font-weight:500;
+          padding: 4% 6%;
+          font-size: 17px;
+          border: 1px solid transparent;
+        }
+        [type= "submit"] {
+          background-color: orangered;
+          color: whitesmoke;
+          width: 60%;
+          padding: 6%;
+        }
+        > textarea {
+          padding: 4% 6%;
+          font-size: 17px;
+          font-weight:500;
+          height: 10vh;
+          border: 1px solid transparent;
+        }
+      }
+    }
+  }
+  // BOTTOM END 
 }
