@@ -214,6 +214,8 @@ body {
   .categories > article {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     row-gap: 1vh;
     padding: 8%;
     background-color: #F2F2F4;

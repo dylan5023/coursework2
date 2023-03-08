@@ -29,6 +29,7 @@
         }
     }
   }
+  // RIGHT 
   .right {
     > form {
       height: 8vh;
@@ -38,6 +39,24 @@
       > a {
         height: 75%;
         width: 10%;
+      }
+    }
+    // CATEGORIES 
+    .categories {
+      > h3 {
+        font-size: 28px;
+      }
+      > article {
+        padding: 4% 2%;
+        row-gap: .5vh;
+        > aside {
+          padding: 2%;
+          
+        }
+        span {
+          width: 10%;
+          padding: 0;
+        }
       }
     }
   }
