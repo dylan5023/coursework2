@@ -18,11 +18,11 @@ header {
 
 header,
 header > section {
-  @include column(0);
+  @include column;
 }
 
 header > section {
-  @include center;
+  @include center (center, center);
   row-gap: 3vh;
   width: 100%;
   height: 100%;
