@@ -34,3 +34,81 @@ header h1 {
   color: whitesmoke;
   font-weight: 800;
 }
+/* footer */
+footer{
+  @include column (13vh);
+  background-color:$bg2color ;
+  p{
+    color: whitesmoke;
+    line-height: 1.5;
+  }
+  a{
+    color: whitesmoke;
+    text-decoration: none;
+  }
+  li{
+    list-style-type: none;
+  }
+}
+.form{
+
+  li{
+    display: flex;
+    column-gap: 1vh;
+    align-items: center;
+    padding-bottom: 2vh;
+  }
+  i{
+    color: whitesmoke;
+  }
+  h3{
+    padding-bottom: 3vh;
+    font-size: 1.5rem;
+  }
+  form{
+    padding-top: 2vh;
+    display: flex;
+    column-gap: 0;
+  }
+  input{
+    padding: 4% 0;
+    text-align: center;
+  }
+  input[type=email]{
+    width: 65%;
+    border: 2px solid white;
+  }
+  input[type=submit]{
+    width: 35%;
+    background-color: $titlecolor;
+    color: whitesmoke;
+    border: 2px solid $titlecolor;
+  }
+}
+.network{
+  display: flex;
+  column-gap: 1vh;
+  > a{
+    width: 5vh;
+    height: 5vh;
+    display: flex;
+    @include center;
+    border: 1px solid whitesmoke;
+    border-radius: 50%;
+  }
+}
+
+.social{
+  border-top: 1px solid grey;
+  padding: 5vh 2vh 0 2vh;
+  > aside {
+    color: whitesmoke;
+  }
+  span{
+    color: $titlecolor;
+  }
+}
+
+footer h3{
+  color: $titlecolor;
+}
