@@ -6,6 +6,7 @@
     main {
         @include column (15vh);
         padding-bottom: 15vh;
+        padding-top: 15vh;
     }
 
     .row {
@@ -45,6 +46,10 @@
 
         p {
             color: gray;
+        }
+
+        a {
+            text-decoration: none
         }
     }
     
@@ -89,6 +94,62 @@
         }
     }
 
+    // ABOUT
+    .about {
+        > figure {
+            display: flex;
+            align-items: flex-end;
+            width: 85%;
+        }
+
+        img {
+            width: 100%;
+            position: relative;
+        }
+
+        figcaption {
+            position: absolute;
+            display: flex;
+            @include center;
+            width: 85%;
+            background-color: orangered;
+            height: 10%;
+            > h4 {
+                font-size: 23px;
+            }
+        }
+
+        section {
+            @include column (2vh);
+            width: 85%;
+            > p {
+                padding-bottom: 3vh;
+            }
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            column-gap: 3vh;
+            color: black;
+            font-weight: 800;
+        }
+
+        i {
+            display: flex;
+            @include center;
+            color: black;
+            background-color: orangered;
+            // padding: 2vh;
+            width: 7vh;
+            height: 7vh;
+            border: 3px solid orangered;
+            outline: 6px solid rgb(252, 184, 128);
+            border-radius: 50px;
+            font-size: 25px;
+        }
+    }
+
     // CHOOSE-US
     .choose-us {
         > figure {
@@ -118,7 +179,6 @@
         }
 
         a {
-            text-decoration: none;
             color: whitesmoke;
             background-color: orangered;
             width: 35%;
@@ -206,7 +266,6 @@
         }
 
         a {
-            text-decoration: none;
             color: orangered;
             border-bottom: 2px solid orangered;
             width: 37%;
