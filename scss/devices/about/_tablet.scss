@@ -113,4 +113,35 @@
     }
     // PLAIN END 
   }
+  // BOTTOM 
+  .bottom {
+    > figure {
+      width: 100%;
+      height: 60vh;
+    }
+    > article {
+      width: 100%;
+      input {
+        padding: 2% 4%;
+        font-size: 25px;
+      }
+      h6 {
+        font-size: 25px;
+      }
+      h3 {
+        font-size: 35px;
+      }
+      textarea {
+        padding: 2% 4%;
+        font-size: 25px;
+      }
+
+      [type="submit"] {
+        width: 40%;
+        padding: 4%;
+      }
+    }
+    
+  }
+  // BOTTOM END 
 }

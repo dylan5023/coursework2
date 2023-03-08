@@ -348,27 +348,26 @@ body {
         @include column(2vh);
         background-color: #F2F2F4;
         padding: 7%;
-
-        > input {
-          color: dimgray;
-          font-weight:500;
-          padding: 4% 6%;
-          font-size: 17px;
-          border: 1px solid transparent;
-        }
-        [type= "submit"] {
-          background-color: orangered;
-          color: whitesmoke;
-          width: 60%;
-          padding: 6%;
-        }
-        > textarea {
-          padding: 4% 6%;
-          font-size: 17px;
-          font-weight:500;
-          height: 10vh;
-          border: 1px solid transparent;
-        }
+      }
+      input {
+        color: dimgray;
+        font-weight:500;
+        padding: 4% 6%;
+        font-size: 17px;
+        border: 1px solid transparent;
+      }
+      textarea {
+        padding: 4% 6%;
+        font-size: 17px;
+        font-weight:500;
+        height: 10vh;
+        border: 1px solid transparent;
+      }
+      [type= "submit"] {
+        background-color: orangered;
+        color: whitesmoke;
+        width: 60%;
+        padding: 6%;
       }
     }
   }
