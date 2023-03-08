@@ -24,17 +24,41 @@
         }
     }
 
+    // ABOUT
+    .about {
+        > figure {
+            > figcaption {
+                height: 8vh;
+            }
+        }
+
+        a {
+            font-size: 20px;
+        }
+
+        a:hover {
+            color: orangered;
+        }
+
+        i {
+            width: 5vh;
+            height: 5vh;
+            border: 3px solid orangered;
+            outline: 10px solid rgb(255, 209, 171);
+        }
+
+        i:hover {
+            color: orangered;
+            background-color: whitesmoke;
+        }
+    }
+
     // CHOOSE-US
     .choose-us {
         > figure {
             row-gap: 3vh;
             padding-bottom: 4vh;
         }
-
-        // img {
-        //     width: 55vh;
-        //     height: 60vh;
-        // }
 
         a {
             width: 15%;
