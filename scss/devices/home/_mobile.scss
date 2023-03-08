@@ -27,19 +27,6 @@
             }
         }
 
-        article {
-            @include column (1vh);
-            
-            small {
-                color: orangered;
-                font-weight: 800;
-            }
-
-            h3 {
-                font-size: 30px;
-            }
-        }
-
         i {
             color: orangered
         }
@@ -50,6 +37,20 @@
 
         a {
             text-decoration: none
+        }
+    }
+    
+    .about article,
+    .choose-us article {
+        @include column (1vh);
+        
+        small {
+            color: orangered;
+            font-weight: 800;
+        }
+    
+        h3 {
+            font-size: 30px;
         }
     }
     
@@ -190,6 +191,11 @@
     
     // TEAM
     .team {
+        > article {
+            width: 80%;
+            text-align: center;
+        }
+        
         > aside {
             width: 85%;
             @include column (3vh);
@@ -217,7 +223,12 @@
 
     // BLOG
     .blog {
-        > figure {
+        > aside {
+            @include column (5vh);
+        }
+
+        .first-block,
+        .second-block {
             @include column (0vh);
             @include center;
             > img {
@@ -256,9 +267,11 @@
             }
         }
 
-        aside {
-            @include column (2vh);
-            width: 90%;
+        figcaption {
+            > aside {
+                @include column (2vh);
+                width: 90%;
+            }
         }
 
         h4 {
