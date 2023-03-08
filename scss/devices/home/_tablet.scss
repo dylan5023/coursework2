@@ -1,0 +1,48 @@
+@media (min-width: $tabletScreen) {
+    
+    .row {
+        > article {
+            small {
+                font-size: 23px;
+            }
+    
+            h3 {
+                font-size: 45px;
+            }
+        }
+    }
+    
+    // BLOG
+    .blog {
+        > aside {
+            flex-direction: row;
+            column-gap: 3vh;
+        }
+
+        .first-block,
+        .second-block {
+            > img {
+                height: 20vh;
+            }
+
+            > figcaption {
+                min-height: 40vh;
+            }
+        }
+
+        section {
+            width: 80%;
+            > figure,
+            > article {
+                column-gap: 1vh;
+            }
+        }
+
+        a:hover {
+            cursor: pointer;
+            color: whitesmoke;
+            background-color: orangered;
+            padding: 3%;
+        }
+    }
+}

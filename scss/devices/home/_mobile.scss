@@ -195,7 +195,7 @@
             width: 80%;
             text-align: center;
         }
-        
+
         > aside {
             width: 85%;
             @include column (3vh);
@@ -225,6 +225,7 @@
     .blog {
         > aside {
             @include column (5vh);
+            width: 85%;
         }
 
         .first-block,
@@ -232,14 +233,13 @@
             @include column (0vh);
             @include center;
             > img {
-                width: 85%;
+                width: 100%;
             }
 
             > figcaption {
                 @include column (2vh);
                 @include center;
-                width: 85%;
-                height: 65vh;
+                min-height: 65vh;
                 background-color: gainsboro;
             }
         }
@@ -256,7 +256,7 @@
 
             img {
                 border-radius: 50px;
-                width: 25%;
+                width: 5vh;
                 height: 5vh;
             }
 
@@ -279,10 +279,17 @@
         }
 
         a {
+            display: flex;
+            flex-direction: row-reverse;
+            column-gap: 1vh;
             color: orangered;
             border-bottom: 2px solid orangered;
-            width: 37%;
-            padding-bottom: 1%;
+            width: 38%;
+            padding-bottom: 2%;
+            letter-spacing: 1.5px;
+            font-size: 13px;
+            transition: .6s;
+            // padding: 3%;
         }
     }
 }
