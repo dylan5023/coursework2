@@ -27,6 +27,9 @@
           justify-content: left;
           column-gap: 4vh;
         }
+        h3 {
+          font-size: 25px;
+        }
     }
   }
   // RIGHT 
@@ -96,5 +99,18 @@
       }
     }
     // CLOUD END 
+
+    // PLAIN 
+    .plain {
+      > article {
+        padding: 4%;
+        > a {
+          padding: 2%;
+          width: 20%;
+          font-size: 18px;
+        }
+      }
+    }
+    // PLAIN END 
   }
 }
