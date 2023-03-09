@@ -1,4 +1,58 @@
 @media (min-width:200px){
+    footer h3{
+        color: $titlecolor;
+      }
+      main{
+        align-items: center
+      }
+      
+      main,
+      main > section,
+      main > section > aside,
+      section > article,
+      section > section,
+      section > section > aside{
+        @include column(0);
+      }
+      h4{
+        text-transform: uppercase;
+        color: $titlecolor;
+      }
+      h2{
+        color: $bg2color;
+      }
+      .quote{
+        background-color: $bg1color;
+      }
+      h5{
+        color: $titlecolor;
+      }
+      h6{
+        color: $bg2color;
+      }
+      li{
+        list-style-type: none;
+      }
+      
+      .quote{
+        input[type=submit]{
+          background-color: $bg2color;
+          color: whitesmoke;
+          border: 2px solid $bg2color;
+        }
+      }
+      
+      .pricing{
+        li{
+          color: dimgray;
+        }
+      }
+      p{
+        color: dimgray;
+      }
+      a{
+        text-decoration: none;
+      }
     /* footer */
     .form{
         @include column(5vh);
@@ -118,13 +172,25 @@
     }
     /* pricing plan*/
     .pricing{
-        > aside{
+        > section > aside{
             background-color: $bg1color;
             align-items: center;
             padding-bottom: 5vh;
+            
             > p{
-                font-size: 2rem;
+                font-size: 20px;
                 padding: 4vh;
+                font-weight: 600;
+            }
+
+            strong{
+                color: $bg2color;
+                font-size: 2rem;
+            }
+
+            span{
+                font-size: 23px;
+                font-weight: 700;
             }
             > h2{
                 width: 100%;
