@@ -67,6 +67,16 @@
             width: 3vh;
             height: 3vh;
         }
+        a:hover{
+            background-color: whitesmoke;
+            color: $bg2color;
+            margin: 0 1vh;
+            width: 6vh;
+            height: 4vh;
+            font-size: 20px;
+            border: 2px solid $bg2color;
+            transition: .3s;
+        }
         
     }
     /* pricing */
@@ -118,14 +128,14 @@
                 width: 46%;
             }
             a{
-                width: 30%;
+                width: 32%;
             }
         }
         a:hover{
             color: $bg2color;
             transition: 1s;
             border-bottom: none;
-            font-weight: 700;
+            font-weight: 600;
         }
     }
     [class*=plane]:hover{

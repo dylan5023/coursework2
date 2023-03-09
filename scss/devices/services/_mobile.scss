@@ -1,63 +1,63 @@
 @media (min-width:$mobileScreen){
+    main{
+    align-items: center
+    }
+    
+    main,
+    main > section,
+    main > section > aside,
+    section > article,
+    section > section,
+    section > section > aside{
+    @include column(0);
+    }
+    h4{
+    text-transform: uppercase;
+    color: $titlecolor;
+    font-weight: 900;
+    }
+    h2{
+    color: $bg2color;
+    font-weight: 900;
+    }
+    .quote{
+    background-color: $bg1color;
+    }
+    h5{
+    color: $titlecolor;
+    }
+    h6{
+    color: $bg2color;
+    }
+    li{
+    list-style-type: none;
+    }
+    
+    .quote{
+    input[type=submit]{
+        background-color: $bg2color;
+        color: whitesmoke;
+        border: 2px solid $bg2color;
+    }
+    }
+    
+    .pricing{
+    li{
+        color: dimgray;
+        text-align: center;
+        padding: 2vh;
+    }
+    }
+    p{
+    color: dimgray;
+    }
+    a{
+    text-decoration: none;
+    }
+    /* footer */
     footer h3{
         color: $titlecolor;
       }
-      main{
-        align-items: center
-      }
-      
-      main,
-      main > section,
-      main > section > aside,
-      section > article,
-      section > section,
-      section > section > aside{
-        @include column(0);
-      }
-      h4{
-        text-transform: uppercase;
-        color: $titlecolor;
-        font-weight: 900;
-      }
-      h2{
-        color: $bg2color;
-        font-weight: 900;
-      }
-      .quote{
-        background-color: $bg1color;
-      }
-      h5{
-        color: $titlecolor;
-      }
-      h6{
-        color: $bg2color;
-      }
-      li{
-        list-style-type: none;
-      }
-      
-      .quote{
-        input[type=submit]{
-          background-color: $bg2color;
-          color: whitesmoke;
-          border: 2px solid $bg2color;
-        }
-      }
-      
-      .pricing{
-        li{
-          color: dimgray;
-          text-align: center;
-          padding: 2vh;
-        }
-      }
-      p{
-        color: dimgray;
-      }
-      a{
-        text-decoration: none;
-      }
-    /* footer */
     .form{
         @include column(5vh);
         align-items: center;
