@@ -1,4 +1,18 @@
 @media (min-width: $desktopScreen) {
+
+    // TEAM
+    .team {
+        > aside {
+            flex-wrap: nowrap;
+        }
+
+        figure {
+            width: 37vh;
+            height: 37vh;
+        }
+    }
+
+    // BLOG
     .blog {
         width: 100%;
        

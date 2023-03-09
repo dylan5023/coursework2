@@ -215,15 +215,16 @@
         }
 
         figure {
-            border: 1px solid red;
+            // border: 1px solid red;
             width: 48vh;
             height: 48vh;
             display: flex;
             flex-direction: column-reverse;
+            border-bottom: 4px solid orangered;
         }
 
         figcaption {
-            border: 1px solid red;
+            // border: 1px solid red;
             width: 100%;
             height: 20%;
             position: relative;
