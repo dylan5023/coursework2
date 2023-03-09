@@ -1,0 +1,38 @@
+@media (min-width: $desktopScreen) {
+    .blog {
+        width: 100%;
+       
+        .first-block,
+        .second-block {
+            > img {
+                height: 40vh;
+            }
+        }
+
+        section {
+            width: 90%;
+            justify-content: unset;
+            column-gap: 3vh;
+
+            figcaption,
+            p {
+                width: 100%;
+            }
+        }
+
+        figcaption {
+            > aside p {
+                font-size: 18px;
+            }
+        }
+
+        h4 {
+            font-size: 25px;
+        }
+
+        a {
+            width: 20%;
+            letter-spacing: 4px;
+        }
+    }
+}
