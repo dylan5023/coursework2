@@ -8,30 +8,6 @@ html {
   font-family: $font-family;
 }
 
-header {
-  background-image: url(/img/header.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 45vh;
-}
-
-header,
-header > section {
-  @include column (3vh);
-}
-
-header > section {
-  @include center;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(50, 50, 50, .8);
-}
-
-header h1 {
-  color: whitesmoke;
-  font-weight: 800;
-}
 /* footer */
 footer{
   @include column (13vh);
