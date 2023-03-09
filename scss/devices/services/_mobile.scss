@@ -1,4 +1,4 @@
-@media (min-width:200px){
+@media (min-width:$mobileScreen){
     footer h3{
         color: $titlecolor;
       }
@@ -47,6 +47,8 @@
       .pricing{
         li{
           color: dimgray;
+          text-align: center;
+          padding: 2vh;
         }
       }
       p{
@@ -174,7 +176,15 @@
     }
     /* pricing plan*/
     .pricing{
-        
+        strong{
+            color: $bg2color;
+            font-size: 2rem;
+        }
+
+        span{
+            font-size: 23px;
+            font-weight: 700;
+        }
         p{
             font-size: 20px;
             padding: 4vh;
@@ -201,23 +211,7 @@
             background-color: $bg1color;
             align-items: center;
             padding-bottom: 5vh;
-
-            strong{
-                color: $bg2color;
-                font-size: 2rem;
-            }
-
-            span{
-                font-size: 23px;
-                font-weight: 700;
-            }
-            
-            
-            
-        }
-        aside li{
-            padding: 2vh;
-            text-align: center;
+ 
         }
         > article{
             padding-bottom: 0;

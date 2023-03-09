@@ -1,0 +1,76 @@
+@media (min-width:$desktopScreen){
+    /* footer */
+    .social{
+        flex-direction: row;
+        >p{
+            padding-left: 8vh;
+        }
+        >ul{
+            padding-right: 8vh;
+        }
+    }
+    .form {
+        column-gap: 15vh;
+        > aside h3{
+            width: 100%;
+        }
+        ul{
+            padding-bottom: 2vh;
+        }
+    }
+    footer{
+        > .form{
+            width: 95%;
+        }
+    }
+    aside{
+        > .network {
+            > a{
+                width: 5vh;
+                height: 5vh;
+                font-size: 13px;
+                
+            }
+        }
+    }
+    .network{
+        padding-left: 1vh;
+    }
+    /*pricing*/
+    .pricing{
+        aside{
+            width: 100%;
+        }
+        > section h2{
+            height: 10vh;
+            font-size: 24px;
+        }
+        > section li{
+            padding: 2vh 0;
+        }
+        > section a{
+            width: 45%;
+            height: 6vh;
+        }
+        ul{
+            padding: 1vh 0;
+        }
+        strong{
+            font-size: 3rem;
+        }
+        > section p{
+            display: flex;
+            align-items: end;
+        }
+        span{
+            padding-bottom: 5vh;
+        }
+        small{
+            padding-bottom: 1vw;
+        }
+        > section{
+            column-gap: 4vh;
+        }
+    }
+    /* quote */
+}
