@@ -69,7 +69,9 @@ body {
     align-items: center;
     justify-content: space-between;
     position: relative;
+    padding-left: 2%;
     height: 10vh;
+    width: 95%;
   }
   nav > a,
   nav > ul {
@@ -91,6 +93,7 @@ body {
     width: 100%;
     text-align: right;
     position: absolute;
+
     cursor: pointer;
   }
   details > ul {
@@ -325,6 +328,7 @@ body {
   .bottom {
     width: 90%;
     padding-top: 10%;
+    flex-wrap: wrap;
     > figure {
       display: flex;
       width: 80%;

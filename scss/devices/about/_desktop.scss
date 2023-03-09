@@ -1,6 +1,9 @@
 @media (min-width: $desktopScreen) {
 
 body {
+  > nav {
+    justify-content: space-between;
+  }
   width: 100%;
   > aside {
     width: 100%;
@@ -110,6 +113,44 @@ main {
     > article {
       > a {
         width: 40%;
+      }
+    }
+  }
+  .bottom {
+    width: 95%;
+    height: 80vh;
+    padding: 5% 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    > figure {
+      width: 30%;
+      height: 100%;
+    }
+    > article {
+      width: 68%;
+      height: 100%;
+      > form {
+        height: 100%;
+      }
+      h6 {
+        font-size: 20px;
+      }
+      h3 {
+        width: 90%;
+      }
+      input {
+        font-size: 20px;
+      }
+      textarea {
+        padding: 4% 4%;
+        font-size: 20px;
+      }
+      [type="submit"] {
+        display: flex;
+        @include center;
+        padding: 3%;
+        width: 30%;
       }
     }
   }
