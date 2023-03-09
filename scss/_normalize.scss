@@ -8,33 +8,6 @@ html {
   font-family: $font-family;
 }
 
-header {
-  background-image: url(/img/header.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 45vh;
-}
-
-header,
-header > section {
-  @include column (1vh);
-}
-
-header > section {
-  @include center;
-  row-gap: 3vh;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(50, 50, 50, .8);
-}
-
-header h1 {
-  font-size: 40px;
-  color: whitesmoke;
-  font-weight: 800;
-}
-
 /* footer */
 footer{
   @include column (13vh);
@@ -101,7 +74,7 @@ footer{
 
 .social{
   border-top: 1px solid grey;
-  padding-top: 5vh;
+  padding: 5vh 2vh 0 2vh;
   > aside {
     color: whitesmoke;
   }
