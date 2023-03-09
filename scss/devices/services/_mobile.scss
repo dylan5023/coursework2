@@ -17,9 +17,11 @@
       h4{
         text-transform: uppercase;
         color: $titlecolor;
+        font-weight: 900;
       }
       h2{
         color: $bg2color;
+        font-weight: 900;
       }
       .quote{
         background-color: $bg1color;
@@ -133,7 +135,7 @@
             @include column(6vh);
         }
         > section > aside{
-            @include column (3vh);
+            @include column (2vh);
             align-items: center;
         }
     }
@@ -172,16 +174,33 @@
     }
     /* pricing plan*/
     .pricing{
+        
+        p{
+            font-size: 20px;
+            padding: 4vh;
+            font-weight: 600;
+        }
+        a{
+            background-color: $titlecolor;
+            width: 40%;
+            height: 5vh;
+            @include center;
+            display: flex;
+            color: whitesmoke;
+        }
+        > section{
+            h2{
+                width: 100%;
+                height: 12vh;
+                background-color: $titlecolor;
+                display: flex;
+                @include center;
+            }
+        }
         > section > aside{
             background-color: $bg1color;
             align-items: center;
             padding-bottom: 5vh;
-            
-            > p{
-                font-size: 20px;
-                padding: 4vh;
-                font-weight: 600;
-            }
 
             strong{
                 color: $bg2color;
@@ -192,30 +211,19 @@
                 font-size: 23px;
                 font-weight: 700;
             }
-            > h2{
-                width: 100%;
-                height: 12vh;
-                background-color: $titlecolor;
-                display: flex;
-                @include center;
-            }
-            li{
-                padding: 2vh;
-                text-align: center;
-            }
-            > a{
-                background-color: $titlecolor;
-                width: 40%;
-                height: 5vh;
-                @include center;
-                display: flex;
-                color: whitesmoke;
-            }
+            
+            
+            
+        }
+        aside li{
+            padding: 2vh;
+            text-align: center;
         }
         > article{
             padding-bottom: 0;
         }
         row-gap: 5vh;
     }
+    
 
 }
