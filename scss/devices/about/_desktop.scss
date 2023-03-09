@@ -70,4 +70,50 @@ nav {
 details {
   display: none;
 }
+main {
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 3%;
+  .left {
+    width: 60%;
+    padding: 5% 1%;
+  }
+  .right {
+    padding: 5% 1%;
+    width: 30%;
+  }
+  .recent {
+    > figure {
+      width: 100%;
+    }
+    > figure:last-child {
+      width: 100%;
+      > img {
+        height: 25vh;
+      }
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+  .cloud {
+    > aside {
+      width: 90%;
+    }
+    > figure {
+      > img {
+        height: 25vh;
+      }
+    }
+  }
+  .plain {
+    > article {
+      > a {
+        width: 40%;
+      }
+    }
+  }
+  
+
+}
 }
