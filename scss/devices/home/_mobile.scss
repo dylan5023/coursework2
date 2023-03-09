@@ -153,10 +153,10 @@
 
     // CHOOSE-US
     .choose-us {
+        background-color: gainsboro;
         > figure {
             @include column (5vh);
             @include center;
-            background-color: gainsboro;
             padding-bottom: 7vh;
         }
 

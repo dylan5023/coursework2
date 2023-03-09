@@ -1,5 +1,29 @@
 @media (min-width: $desktopScreen) {
 
+
+    // CHOOSE-US
+    .choose-us {
+        // background-color: gainsboro;
+        > figure {
+            flex-direction: row;
+            padding-bottom: 0;
+            width: 90%;
+            column-gap: 3vh;
+        }
+
+        img {
+            width: 30%;
+            height: 100%;
+        }
+
+        figcaption {
+            width: 60%;
+        }
+
+        a {
+            padding: 1vh;
+        }
+    }
     // TEAM
     .team {
         > aside {
