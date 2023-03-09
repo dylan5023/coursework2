@@ -1,12 +1,14 @@
 @media (min-width: $mobileScreen) {
-  main,
-  main > section,
+  
+  body > aside,
+  body {
+    @include column(0);
+  }
+  
   body > nav > aside,
   body > aside,
   body > aside > ul,
-  body > aside li,
-  figure,
-  figcaption {
+  body > aside li {
     @include center;
   }
   main {
