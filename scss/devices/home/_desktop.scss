@@ -1,9 +1,26 @@
 @media (min-width: $desktopScreen) {
 
+    .about p,
+    .choose-us p {
+        font-size: 18px;
+    }
+    
+    // ABOUT
+    .about {
+        flex-direction: row;
+        column-gap: 3vh;
+        > figure {
+            width: 42vh;
+            height: 42vh;
+        }
+        
+        section {
+            width: 55%;
+        }
+    }
 
     // CHOOSE-US
     .choose-us {
-        // background-color: gainsboro;
         > figure {
             flex-direction: row;
             padding-bottom: 0;
