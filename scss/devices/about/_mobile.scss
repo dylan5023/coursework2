@@ -135,6 +135,7 @@ body {
     row-gap: 0;
   }
   .left figcaption {
+    align-items: flex-start;
     row-gap: 2vh;
     width: 90%;
     padding: 8% 5%;
@@ -147,9 +148,13 @@ body {
   }
   .left figcaption a {
     display: flex;
-    width: 100%;
+    width: 40%;
     font-weight: 600;
+    transition: .5s;
     color: orangered;
+  }
+  .left figcaption a:hover {
+    color: black;
   }
   .left figcaption aside {
     display: flex;
@@ -241,8 +246,12 @@ body {
   .categories article a {
     color: black;
     font-weight: 500;
-    font-size: 18px;
-    
+    font-size: 18px;  
+    transition: .5s;
+    border: 1px solid transparent;
+  }
+  .categories article a:hover {
+    border-bottom: 1px solid black;
   }
   .categories article span{
     font-weight: 700;
