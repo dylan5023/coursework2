@@ -4,7 +4,29 @@
     .choose-us p {
         font-size: 18px;
     }
-    
+
+    // HEADER
+    header {
+        h1 {
+            font-size: 65px;
+        }
+
+        form {
+            width: 70%;
+            input {
+                padding: 2%;
+                width: 30%;
+            }
+
+            [type="submit"] {
+                color: whitesmoke;
+                background-color: orangered;
+                width: 10%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
     // ABOUT
     .about {
         flex-direction: row;
