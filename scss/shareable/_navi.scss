@@ -41,12 +41,17 @@
     font-size: 15px;
     color: whitesmoke;
     text-decoration: none;
+    transition: .5s;
   }
   body aside i {
     text-decoration: none;
   }
   body > aside [class*="fa-"] {
     font-size: 18px;
+    transition: .5s;
+  }
+  body > aside [class*="fa-"]:hover {
+    color: orangered;
   }
   body > aside span {
     text-align: center;
