@@ -11,14 +11,18 @@
     section > section > aside{
     @include column(0);
     }
-    h4{
-    text-transform: uppercase;
-    color: $titlecolor;
-    font-weight: 900;
-    }
-    h2{
-    color: $bg2color;
-    font-weight: 900;
+    .services,
+    .quote,
+    .pricing{
+      h4{
+        text-transform: uppercase;
+        color: $titlecolor;
+        font-weight: 900;
+        }
+        h2{
+        color: $bg2color;
+        font-weight: 900;
+        }
     }
     .quote{
     background-color: $bg1color;
