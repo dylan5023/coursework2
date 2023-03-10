@@ -1,5 +1,5 @@
 //* mobile footer*//
-@media (min-width: 300px) {
+@media (min-width: $mobileScreen) {
     footer h3{
         color: $titlecolor;
       }
@@ -36,7 +36,7 @@
 }
 
 //* tablet footer*//
-@media (min-width: 700px) {
+@media (min-width: $tabletScreen) {
     footer{
         align-items: center;
         input[type=submit]:hover{
@@ -119,7 +119,7 @@
 }
 
 //* desktop footer *//
-@media (min-width: 1000px) {
+@media (min-width: $desktopScreen) {
     .social{
         flex-direction: row;
         >p{
