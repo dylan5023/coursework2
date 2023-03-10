@@ -131,10 +131,10 @@
 
             &:hover ul {
                 cursor: pointer;
-                height: 100%;
+                height: 140%;
                 width: 100%;
-                background-color: rgba(50, 50, 50, .6);
-                font-size: 40px;
+                background-color: orangered;
+                font-size: 35px;
                 // visibility: visible;
             }
 
@@ -154,16 +154,33 @@
             justify-content: center;
             column-gap: 4vw;
             width: 100%;
-            font-size: 0px;
+            bottom: -25%;
+            // font-size: 0px;
             // visibility: hidden;
+        }
+
+        a {
+            display: flex;
+            @include center;
+            width: 5vh;
+            height: 5vh;
+            border: 2px solid black;
+            border-radius: 50px;
+            color: black;
         }
         
         i {
-            color: rgb(68, 68, 68);
+            color: black;
             // transition: .1s;
             
             &:hover {
-                color: orange;
+                color: white;
+                background-color: black;
+                width: 100%;
+                height: 100%;
+                border-radius: 50px;
+                display: flex;
+                @include center;
             }
         }
 
@@ -201,6 +218,10 @@
             > article {
                 column-gap: 1vh;
             }
+        }
+
+        a {
+            width: 10vh;
         }
 
         a:hover {
