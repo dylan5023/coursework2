@@ -93,6 +93,9 @@
         }
         > aside:nth-child(2){
             width: 25%;
+            a:hover {
+                color: orangered;
+            }
         }
         > aside:nth-child(1){
             width: 25%;
