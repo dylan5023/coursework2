@@ -159,22 +159,23 @@
         }
         > section{
             column-gap: 4vh;
+            width: 100%;
         }
     }
     /* quote */
-    .quote{
+    main >.quote{
         flex-direction: row;
         padding: 0;
         width: 100%;
         justify-content: center;
     }
-    .left{
+    .sleft{
         width: 50%;
         h5{
             font-size: 1.9rem;
         }
     }
-    .right{
+    .sright{
         width: 35%;
     }
 
