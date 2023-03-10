@@ -1,163 +1,171 @@
 //* mobile footer*//
-footer h3{
-    color: $titlecolor;
-  }
-.form{
-    @include column(5vh);
-    align-items: center;
-    > aside{
-        width: 90%;
-    }
-}
-footer{
-    padding-top: 13vh;
-
-    [class$=right]{
-        font-size: .7rem;
-    }
-    address{
-        font-style: normal
-    }
-    
-}
-.social{
-    @include column(3vh);
-    text-align: center;
-    align-items: center;
-    padding-bottom: 5vh;
-
-    ul{
-        display: flex;
-        width: 85%;
-        justify-content: space-around;
-    }
-}
-//* tablet footer*//
-footer{
-    align-items: center;
-    input[type=submit]:hover{
-        background-image: url("https://images.pexels.com/photos/5898313/pexels-photo-5898313.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        border: 1px solid transparent;
-        color: transparent;
-        transition: .7s;
-    }
-}
-.social{
-    width: 100%;
-    row-gap: 0;
-    > ul {
-        width: 80%;
-        justify-content: flex-end;
-
-    }
-    li{
-        padding: 0 2%;
-    }
-    > p{
-        text-align: unset;
-        display: flex;
-        justify-content: flex-start;
-        width: 82%;
-        
-    }
-    a:hover{
+@media (min-width: $mobileScreen) {
+    footer h3{
         color: $titlecolor;
-    }
-}
-
-
-.form{
-    flex-direction: row;
-    align-items: flex-start;
-    width: 85%;
-    justify-content: center;
-    column-gap: 2vh;
-    h3{
-        width: 50%;
-    }
-    > aside li{
-        padding-bottom: 1vh;
-    }
-    > aside:nth-child(2) > h3{
-        width: 100%;
-    }
-    > aside:nth-child(3){
-        width: 50%;
-    }
-    > aside:nth-child(2){
-        width: 25%;
-    }
-    > aside:nth-child(1){
-        width: 25%;
-    }
-    
-}
-.network{
-    > a{
-        width: 3vh;
-        height: 3vh;
-    }
-    a:hover{
-        background-color: whitesmoke;
-        color: $bg2color;
-        margin: 0 1vh;
-        width: 6vh;
-        height: 4vh;
-        font-size: 20px;
-        border: 2px solid $bg2color;
-        transition: .3s;
-    }
-    
-}
-//* desktop footer *//
-.social{
-    flex-direction: row;
-    >p{
-        padding-left: 8vh;
-    }
-    >ul{
-        padding-right: 8vh;
-    }
-    
-}
-.form {
-    column-gap: 15vh;
-    > aside h3{
-        width: 100%;
-    }
-    ul{
-        padding-bottom: 2vh;
-    }
-}
-footer{
-    > .form{
-        width: 95%;
-    }
-}
-aside{
-    > .network {
-        > a{
-            width: 5vh;
-            height: 5vh;
-            font-size: 13px;
-            
+      }
+    .form{
+        @include column(5vh);
+        align-items: center;
+        > aside{
+            width: 90%;
         }
     }
+    footer{
+        padding-top: 13vh;
+    
+        [class$=right]{
+            font-size: .7rem;
+        }
+        address{
+            font-style: normal
+        }
+        
+    }
+    .social{
+        @include column(3vh);
+        text-align: center;
+        align-items: center;
+        padding-bottom: 5vh;
+    
+        ul{
+            display: flex;
+            width: 85%;
+            justify-content: space-around;
+        }
+    }
+
 }
-.network{
-    padding-left: 1vh;
-    a:hover{
-        background-color: whitesmoke;
-        color: $bg2color;
-        margin: 0 2vh;
-        width: 7vh;
-        height: 7vh;
-        font-size: 27px;
-        border: 2px solid $bg2color;
-        transition: .3s;
+@media (min-width: $tabletScreen) {
+    //* tablet footer*//
+    footer{
+        align-items: center;
+        input[type=submit]:hover{
+            background-image: url("https://images.pexels.com/photos/5898313/pexels-photo-5898313.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: 1px solid transparent;
+            color: transparent;
+            transition: .7s;
+        }
+    }
+    .social{
+        width: 100%;
+        row-gap: 0;
+        > ul {
+            width: 80%;
+            justify-content: flex-end;
+    
+        }
+        li{
+            padding: 0 2%;
+        }
+        > p{
+            text-align: unset;
+            display: flex;
+            justify-content: flex-start;
+            width: 82%;
+            
+        }
+        a:hover{
+            color: $titlecolor;
+        }
     }
     
+    
+    .form{
+        flex-direction: row;
+        align-items: flex-start;
+        width: 85%;
+        justify-content: center;
+        column-gap: 2vh;
+        h3{
+            width: 50%;
+        }
+        > aside li{
+            padding-bottom: 1vh;
+        }
+        > aside:nth-child(2) > h3{
+            width: 100%;
+        }
+        > aside:nth-child(3){
+            width: 50%;
+        }
+        > aside:nth-child(2){
+            width: 25%;
+        }
+        > aside:nth-child(1){
+            width: 25%;
+        }
+        
+    }
+    .network{
+        > a{
+            width: 3vh;
+            height: 3vh;
+        }
+        a:hover{
+            background-color: whitesmoke;
+            color: $bg2color;
+            margin: 0 1vh;
+            width: 6vh;
+            height: 4vh;
+            font-size: 20px;
+            border: 2px solid $bg2color;
+            transition: .3s;
+        }
+        
+    }
+}
+
+//* desktop footer *//
+@media (min-width: $desktopScreen) {
+    .social{
+        flex-direction: row;
+        >p{
+            padding-left: 8vh;
+        }
+        >ul{
+            padding-right: 8vh;
+        }
+        
+    }
+    .form {
+        column-gap: 15vh;
+        > aside h3{
+            width: 100%;
+        }
+        ul{
+            padding-bottom: 2vh;
+        }
+    }
+    footer{
+        > .form{
+            width: 95%;
+        }
+    }
+    aside{
+        > .network {
+            > a{
+                width: 5vh;
+                height: 5vh;
+                font-size: 13px;
+                
+            }
+        }
+    }
+    .network{
+        padding-left: 1vh;
+        a:hover{
+            background-color: whitesmoke;
+            color: $bg2color;
+            margin: 0 2vh;
+            width: 7vh;
+            height: 7vh;
+            font-size: 27px;
+            border: 2px solid $bg2color;
+            transition: .3s;
+        }
+        
+    }
 }
