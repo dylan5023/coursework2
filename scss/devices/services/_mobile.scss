@@ -4,21 +4,32 @@
     }
     
     main,
-    main > section,
-    main > section > aside,
+    main > .services,
+    main > .quote,
+    main > .pricing,
+    main > .services > aside,
+    main > .quote > aside,
+    main > .pricing > aside,
     section > article,
     section > section,
     section > section > aside{
       @include column(0);
     }
-    h4{
-      text-transform: uppercase;
-      color: $titlecolor;
-      font-weight: 900;
+    .services,
+    .quote,
+    .pricing{
+      h4{
+        text-transform: uppercase;
+        color: $titlecolor;
+        font-weight: 900;
+        }
+        h2{
+        color: $bg2color;
+        font-weight: 900;
+        }
     }
-    h2{
-      color: $bg2color;
-      font-weight: 900;
+    main > .quote{
+      row-gap: 10vh;
     }
     .quote{
       background-color: $bg1color;
@@ -191,13 +202,14 @@
           text-decoration: none;
           color: whitesmoke;
         }
-        aside{
-            display: flex;
-            align-items: center;
-            column-gap: 2vh;
+      }
+      
+      [data-bind='miguel'] > section > aside{
+          display: flex;
+          align-items: center;
+          column-gap: 2vh;
 
-        }
-    }
+      }
     
     .quote{
     input[type=submit]{
@@ -206,8 +218,13 @@
         border: 2px solid $bg2color;
     }
     }
-    
+    main > .pricing{
+      row-gap: 4vh;
+    }
     .pricing{
+      > section{
+        row-gap: 5vh;
+      }
     li{
         color: dimgray;
         text-align: center;
@@ -329,7 +346,7 @@
         }
         padding: 6vh 0 0 0;
     }
-    .left{
+    .sleft{
         @include column(3vh);
         h5{
             font-size: 1.4rem;
@@ -343,7 +360,12 @@
             @include column (2vh);
         }
     }
-    .left, .right{
+    .quote{
+      >.sleft{
+        row-gap: 4vh;
+      }
+    }
+    .sleft, .sright{
         width: 85%;
     }
     /* pricing plan*/

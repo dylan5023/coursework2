@@ -5,8 +5,6 @@
 
     main {
         @include column (15vh);
-        padding-bottom: 15vh;
-        padding-top: 15vh;
     }
 
     .row {
@@ -16,6 +14,7 @@
         > article {
             @include column (1vh);
             @include center;
+            padding: 0%;
 
             small {
                 color: orangered;
@@ -107,11 +106,16 @@
                 background-color: orangered;
             }
         }
+
+        aside {
+            column-gap: 0vh;
+        }
     }
 
     // ABOUT
     .about {
         row-gap: 7vh;
+        width: 100%;
 
         > figure {
             display: flex;
@@ -157,10 +161,15 @@
             border-radius: 50px;
             font-size: 25px;
         }
+
+        article {
+            text-align: left;
+        }
     }
 
     // CHOOSE-US
     .choose-us {
+        padding: 0%;
         background-color: gainsboro;
         > figure {
             @include column (5vh);
@@ -205,8 +214,9 @@
     
     // TEAM
     .team {
+        padding-bottom: 0%;
         > article {
-            width: 80%;
+            // width: 80%;
             text-align: center
         }
 
@@ -285,6 +295,8 @@
                 display: flex;
                 align-items: center;
                 column-gap: 2vh;
+                padding: 0;
+                flex-direction: row;
             }
 
             img {

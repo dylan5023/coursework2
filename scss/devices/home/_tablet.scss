@@ -58,21 +58,22 @@
             font-size: 20px;
         }
 
-        a:hover {
-            cursor: pointer;
-            color: orangered;
-
-            i {
-                color: orangered;
-                background-color: whitesmoke;
-            }
+        i:hover {
+            animation-name: play;
+            animation-timing-function: ease-in;
+            animation-duration: 2s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
         }
 
         i {
             width: 5vh;
             height: 5vh;
-            border: 3px solid orangered;
-            outline: 10px solid rgb(255, 209, 171);
+        }
+
+        article {
+            padding: 0%;
         }
     }
 
@@ -98,6 +99,7 @@
 
     // TEAM
     .team {
+        width: 100%;
         > aside {
             flex-direction: row;
             flex-wrap: wrap;
@@ -130,7 +132,6 @@
                 width: 100%;
                 background-color: orangered;
                 font-size: 35px;
-                // visibility: visible;
             }
 
             &:hover aside {
@@ -223,5 +224,17 @@
             background-color: orangered;
             padding: 3%;
         }
+    }
+}
+
+@keyframes play {
+    0% {
+        background-color: orangered;
+        transform: scale(1);
+    }
+
+    100% {
+        background-color: orangered;
+        transform: scale(1.3);
     }
 }
