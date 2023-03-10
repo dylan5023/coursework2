@@ -116,7 +116,12 @@
     border: 1px solid gainsboro;
     padding: 2% 3%;
     font-size: 26px;
+    transition: .5s;
     color: dimgray;
+  }
+  summary:hover {
+    background-color: orangered;
+    color: whitesmoke;
   }
  
 }
