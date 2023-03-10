@@ -1,9 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Noto Sans', sans-serif;
-}
 img {
   width: 20%;
 }
@@ -14,11 +8,10 @@ figcaption,
 main > section > section,
 body > aside,
 body {
-  display: flex;
-  flex-direction: column;
+  @include column(0);
 }
 
-@media (min-width: 300px) {
+@media (min-width: $mobileScreen) {
   main,
   main > section,
   body > nav > aside,
@@ -27,8 +20,7 @@ body {
   body > aside li,
   figure,
   figcaption {
-    align-items: center;
-    justify-content: center;
+    @include center;
   }
   main {
     flex-wrap: wrap;
@@ -77,8 +69,9 @@ body {
     align-items: center;
     justify-content: space-between;
     position: relative;
-    border: 1px solid black;
+    padding-left: 2%;
     height: 10vh;
+    width: 95%;
   }
   nav > a,
   nav > ul {
@@ -100,6 +93,7 @@ body {
     width: 100%;
     text-align: right;
     position: absolute;
+
     cursor: pointer;
   }
   details > ul {
@@ -136,7 +130,12 @@ body {
     row-gap: 4vh;
     padding: 20% 0;
   }
+  .left > figure {
+    width: 100%;
+    row-gap: 0;
+  }
   .left figcaption {
+    align-items: flex-start;
     row-gap: 2vh;
     width: 90%;
     padding: 8% 5%;
@@ -149,9 +148,13 @@ body {
   }
   .left figcaption a {
     display: flex;
-    width: 100%;
+    width: 40%;
     font-weight: 600;
+    transition: .5s;
     color: orangered;
+  }
+  .left figcaption a:hover {
+    color: black;
   }
   .left figcaption aside {
     display: flex;
@@ -174,12 +177,10 @@ body {
   .right {
     width: 90%;
     row-gap: 5vh;
-    border: 1px solid black; 
   }
   .right > form {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    @include center;
     width: 90%;
     height: 10vh;
     padding: 5%;
@@ -189,12 +190,11 @@ body {
     width: 80%;
     padding: 5% 3%;
     font-size: 18px;
+    border: 1px solid transparent;
   }
   .right > form > a {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid black;
+    @include center;
     width: 15%;
     height: 85%;
     font-size: 18px;
@@ -203,18 +203,27 @@ body {
     color: whitesmoke;
   }
   /* CATEGORIES  */
-  .categories {
+  .categories,
+  .recent,
+  .cloud,
+  .plain,
+  .bottom {
     width: 100%;
     row-gap: 4vh;
   }
-  .categories > h3 {
+  .categories > h3,
+  .recent > h3,
+  .cloud > h3,
+  .plain > h3 {
     display: flex;
     width: 100%;
-    font-size: 25px;
+    font-size: 23px;
   }
   .categories > article {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     row-gap: 1vh;
     padding: 8%;
     background-color: #F2F2F4;
@@ -237,8 +246,12 @@ body {
   .categories article a {
     color: black;
     font-weight: 500;
-    font-size: 18px;
-    
+    font-size: 18px;  
+    transition: .5s;
+    border: 1px solid transparent;
+  }
+  .categories article a:hover {
+    border-bottom: 1px solid black;
   }
   .categories article span{
     font-weight: 700;
@@ -249,5 +262,128 @@ body {
     text-align: center;
   }
   /* CATEGORIES END  */
+  // RECENT 
+  .recent{
+    row-gap: 2vh;
+    > figure {
+      flex-direction: row;
+      column-gap: 2vh;
+      background-color: #F2F2F4;
+      > img {
+        height: 12vh;
+        width: 12vh;
+      }
+      > p {
+        font-size: 18px;
+      }
+    }
+    figure:last-child {
+      > img {
+        width: 100%;
+        height: 35vh;
+        padding-top: 7%;
+        background-color: white;
+      }
+    }
+  }
   /* RIGHT END  */
+  // CLOUD 
+  .cloud {
+    > aside {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1vh;
+      
+      > span {
+        background-color: #F2F2F4;
+        padding: 2% 3%;
+      }
+    }
+    > figure {
+      padding-top: 4%;
+      width: 100%;
+      > img {
+        width: 100%;
+      }
+    }
+  }
+  // CLOUD END 
+  // PLAIN 
+  .plain {
+    > article {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2vh;
+      padding: 7%;
+      background-color: #F2F2F4;
+      text-align: center;
+      @include center;
+      > p {
+        color: dimgray;
+        line-height: 1.5;
+      }
+      > a {
+        width: 40%;
+        background-color: orangered;
+        padding: 3%;
+        color: whitesmoke;
+        text-decoration: none;
+      }
+    }
+  }
+  // PLAIN END 
+  // BOTTOM 
+  .bottom {
+    width: 90%;
+    padding-top: 10%;
+    flex-wrap: wrap;
+    > figure {
+      display: flex;
+      width: 80%;
+      > img {
+        width: 100%;
+        height: 80vh;
+      }
+    }
+    > article {
+      @include column(1vh);
+      > h6 {
+        color: orangered;
+        font-size: 17px;
+        font-weight: 800;
+      }
+      > h3 {
+        font-weight: 900;
+        font-size: 25px;
+        width: 70%;
+      }
+      > form {
+        @include column(2vh);
+        background-color: #F2F2F4;
+        padding: 7%;
+      }
+      input {
+        color: dimgray;
+        font-weight:500;
+        padding: 4% 6%;
+        font-size: 17px;
+        border: 1px solid transparent;
+      }
+      textarea {
+        padding: 4% 6%;
+        font-size: 17px;
+        font-weight:500;
+        height: 10vh;
+        border: 1px solid transparent;
+      }
+      [type= "submit"] {
+        background-color: orangered;
+        color: whitesmoke;
+        width: 60%;
+        padding: 6%;
+      }
+    }
+  }
+  // BOTTOM END 
 }
