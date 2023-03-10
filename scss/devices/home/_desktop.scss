@@ -144,6 +144,10 @@
             width: 90%;
             justify-content: unset;
             column-gap: 3vh;
+            > figure,
+            > article {
+                width: unset;
+            }
 
             figcaption,
             p {
