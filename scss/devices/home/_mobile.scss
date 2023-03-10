@@ -116,6 +116,8 @@
     .about {
         row-gap: 7vh;
         width: 100%;
+        padding-top: 15vh;
+        padding-bottom: 15vh;
 
         > figure {
             display: flex;
@@ -214,7 +216,9 @@
     
     // TEAM
     .team {
-        padding-bottom: 0%;
+        padding-top: 15vh;
+        padding-bottom: 15vh;
+
         > article {
             // width: 80%;
             text-align: center
@@ -266,6 +270,7 @@
 
     // BLOG
     .blog {
+        padding-bottom: 15vh;
         > aside {
             @include column (5vh);
             width: 85vw;
@@ -288,15 +293,19 @@
         }
 
         section {
+            width: 90%;
             display: flex;
             justify-content: center;
             > figure,
             > article {
+                width: 100%;
                 display: flex;
                 align-items: center;
+                justify-content: unset;
                 column-gap: 2vh;
                 padding: 0;
                 flex-direction: row;
+                text-align: left;
             }
 
             img {
