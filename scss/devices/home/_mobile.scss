@@ -238,7 +238,7 @@
         }
 
         > aside {
-            width: 85%;
+            // width: 50vh;
             @include column (3vh);
             @include center;
         }
@@ -286,7 +286,7 @@
     .blog {
         > aside {
             @include column (5vh);
-            width: 85%;
+            width: 85vw;
         }
 
         .first-block,
@@ -345,7 +345,7 @@
             column-gap: 1vh;
             color: orangered;
             border-bottom: 2px solid orangered;
-            width: 16vh;
+            width: 29vw;
             padding-bottom: 2%;
             letter-spacing: 1.5px;
             font-size: 13px;
