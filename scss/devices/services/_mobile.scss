@@ -193,13 +193,14 @@
           text-decoration: none;
           color: whitesmoke;
         }
-        aside{
-            display: flex;
-            align-items: center;
-            column-gap: 2vh;
+      }
+      
+      [data-bind='miguel'] > section > aside{
+          display: flex;
+          align-items: center;
+          column-gap: 2vh;
 
-        }
-    }
+      }
     
     .quote{
     input[type=submit]{
