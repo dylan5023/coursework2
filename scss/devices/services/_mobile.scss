@@ -208,7 +208,6 @@
           column-gap: 2vh;
 
       }
-    
     .quote{
     input[type=submit]{
         background-color: $bg2color;
@@ -270,7 +269,9 @@
         }
     }
     /* services */
-    main > section{
+    main > .quote,
+    main > .services,
+    main > .pricing{
         width: 85%;
         padding: 15vh 0;
     }
