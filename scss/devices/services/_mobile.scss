@@ -275,11 +275,15 @@
     main > .services,
     main > .pricing{
         width: 85%;
-        // padding: 15vh 0;
+        padding: 15vh 0;
+        text-align: center;
+    }
+
+    main > section {
+      padding: 10vh 0;
     }
 
     section > article{
-        // text-align: center;
         padding-bottom: 4vh;
         h2,h4{
             font-weight: 800;
