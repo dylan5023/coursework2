@@ -79,6 +79,25 @@
         }
         
     }
+    /* nav */
+    body {
+        > aside {
+        height: 8vh;
+        > ul {
+            width: 50%;
+            column-gap: 0;
+        }
+        > ul:last-child {
+            width: 30%;
+        }
+        span {
+            text-align: left;
+        }
+        li {
+            width: 80%;
+        }
+        }
+    }
     /* pricing */
     .pricing{
         > section{

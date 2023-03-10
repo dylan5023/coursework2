@@ -1,4 +1,79 @@
 @media (min-width:$desktopScreen){
+    /* nav */
+    body {
+        > nav {
+          justify-content: space-between;
+        }
+        width: 100%;
+        > aside {
+          width: 100%;
+          justify-content: space-between;
+          flex-direction: row;
+          > ul {
+            width: 35%;
+          }
+          > ul:last-child {
+            width: 15%;
+          }
+          li {
+            width: 50%;
+          }
+        }
+        > nav {
+          height: 10vh;
+        }
+      }
+      // NAV 
+      nav {
+        > ul {
+          display: flex;
+          @include center;
+          width: 30%;
+          height: 100%;
+          > li {
+            display: flex;
+            @include center;
+            width: 100%;
+            height: 100%;
+          }
+          a {
+            display: flex;
+            @include center;
+            width: 100%;
+            height: 100%;
+            color: black;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 20px;
+            transition: .5s;
+          }
+          a:hover {
+            color: whitesmoke;
+            background-color: orangered;
+    
+          }
+        }
+        > a {
+          display: flex;
+          @include center;
+          width: 15%;
+          padding: 1% 0;
+          font-weight: 600;
+          transition: .5s;
+          background-color: orangered;
+          color: white;
+          text-decoration: none;
+        }
+        > a:hover {
+          background-color: whitesmoke;
+          color: orangered;
+        }
+      }
+      details {
+        display: none;
+      }
+    /* nav end*/      
+    
     /* footer */
     .social{
         flex-direction: row;
