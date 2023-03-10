@@ -17,6 +17,10 @@
         }
     }
 
+    .monika-main {
+        padding: 0%;
+    }
+
     // HEADER
     header {
         h1 {
@@ -33,7 +37,6 @@
             [type="submit"] {
                 color: whitesmoke;
                 background-color: orangered;
-                width: 10%;
                 display: flex;
                 justify-content: center;
             }

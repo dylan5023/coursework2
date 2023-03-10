@@ -15,6 +15,9 @@
     section > section > aside{
       @include column(0);
     }
+    .smain{
+      padding: 0;
+    }
     .services,
     .quote,
     .pricing{
@@ -331,8 +334,10 @@
     }
 
     /* quote */
+    #quote{
+      width: 100%;
+    }
     .quote{
-        width: 100%;
         align-items: center;
         row-gap: 8vh;
         form{
