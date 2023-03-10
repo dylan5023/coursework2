@@ -1,0 +1,393 @@
+@media (min-width:$mobileScreen){
+    main{
+    align-items: center
+    }
+    
+    main,
+    main > section,
+    main > section > aside,
+    section > article,
+    section > section,
+    section > section > aside{
+    @include column(0);
+    }
+    h4{
+    text-transform: uppercase;
+    color: $titlecolor;
+    font-weight: 900;
+    }
+    h2{
+    color: $bg2color;
+    font-weight: 900;
+    }
+    .quote{
+    background-color: $bg1color;
+    }
+    h5{
+    color: $titlecolor;
+    }
+    h6{
+    color: $bg2color;
+    }
+    li{
+    list-style-type: none;
+    }
+    > section > aside {
+        display: flex;
+        align-items: center;
+        column-gap: 2vh;
+    }
+    /* nav */
+    body > aside,
+    body {
+      @include column(0);
+    }
+    
+    body > nav > aside,
+    body > aside,
+    body > aside > ul,
+    body > aside li {
+      @include center;
+    }
+    main {
+      flex-wrap: wrap;
+    }
+    body > aside {
+      flex-wrap: wrap;
+      background-color: #1F1F2E;
+      row-gap: 2vh;
+      width: 100%;
+      height: 15vh;
+      color: whitesmoke;
+    }
+    body > aside > ul {
+      display: flex;
+      column-gap: 1vh;
+      width: 90%;
+      font-weight: 600;
+    }
+    body > aside > ul:last-child {
+      width: 50%;
+    }
+    body > aside li {
+      display: flex;
+      column-gap: 10px;
+      width: 100%;
+      list-style: none;
+    }
+    body aside a {
+      font-size: 15px;
+      color: whitesmoke;
+      text-decoration: none;
+    }
+    body aside i {
+      text-decoration: none;
+    }
+    body > aside [class*="fa-"] {
+      font-size: 18px;
+    }
+    body > aside span {
+      text-align: center;
+      width: 10%;
+    }
+    /* NAV  */
+    body > nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      padding-left: 2%;
+      height: 10vh;
+      width: 95%;
+    }
+    nav > a,
+    nav > ul {
+      display: none;
+    }
+    body > nav > aside {
+      display: flex;
+      column-gap: 1vh;
+      color: orangered;
+    }
+    body > nav i  {
+      font-size: 30px;
+    }
+    body > nav h2 {
+      font-size: 30px;
+      font-weight: 800;
+    }
+    details {
+      width: 100%;
+      text-align: right;
+      position: absolute;
+  
+      cursor: pointer;
+    }
+    details > ul {
+      background-color: white;
+      width: 100%;
+      position: absolute;
+    }
+    details li {
+      display: flex;
+    }
+    details a {
+      width: 100%;
+      padding: 5%;
+      text-align: left;
+      color: gray;
+      font-size: 20px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: .5s;
+    }
+    details a:hover{
+      color: whitesmoke;
+      background-color: orangered;
+    }
+    summary {
+      border: 1px solid gainsboro;
+      padding: 2% 3%;
+      font-size: 26px;
+      color: dimgray;
+    }
+    /* nav end*/
+    
+    header {
+        background-image: url(/img/header.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 45vh;
+      
+        > section {
+          @include center;
+          @include column (1vh);
+          width: 100%;
+          height: 100%;
+          background-color: rgba(50, 50, 50, .8);
+        }
+      
+        h1 {
+          width: 50%;
+          text-align: center;
+          font-size: 40px;
+          color: whitesmoke;
+          font-weight: 800;
+        }
+      
+        span {
+          display: flex;
+          width: 2vh;
+          height: 2vh;
+          background-color: whitesmoke;
+          border: 1px solid transparent;
+          border-radius: 50px;
+        }
+      
+        a {
+          text-decoration: none;
+          color: whitesmoke;
+        }
+        aside{
+            display: flex;
+            align-items: center;
+            column-gap: 2vh;
+
+        }
+    }
+    
+    .quote{
+    input[type=submit]{
+        background-color: $bg2color;
+        color: whitesmoke;
+        border: 2px solid $bg2color;
+    }
+    }
+    
+    .pricing{
+    li{
+        color: dimgray;
+        text-align: center;
+        padding: 2vh;
+    }
+    }
+    p{
+    color: dimgray;
+    }
+    a{
+    text-decoration: none;
+    }
+    /* footer */
+    footer h3{
+        color: $titlecolor;
+      }
+    .form{
+        @include column(5vh);
+        align-items: center;
+        > aside{
+            width: 90%;
+        }
+    }
+    footer{
+        padding-top: 13vh;
+
+        [class$=right]{
+            font-size: .7rem;
+        }
+        address{
+            font-style: normal
+        }
+        
+    }
+    .social{
+        @include column(3vh);
+        text-align: center;
+        align-items: center;
+        padding-bottom: 5vh;
+
+        ul{
+            display: flex;
+            width: 85%;
+            justify-content: space-around;
+        }
+    }
+    /* services */
+    main > section{
+        width: 85%;
+        padding: 15vh 0;
+    }
+
+    section > article{
+        text-align: center;
+        padding-bottom: 4vh;
+        h2,h4{
+            font-weight: 800;
+        }
+    }
+
+    h2{
+        font-size: 1.8rem;
+    }
+    .services{
+        > section article{
+            display: flex;
+            background-color: $titlecolor;
+            @include center;
+            height: 10vh;
+            column-gap: 3vh;
+            width: 100%;
+        }
+        article > h5{
+            color: whitesmoke;
+            font-size: 15px;
+            font-weight: 400;
+        }
+        article > i{
+            font-size: 1.8rem;
+            color: $bg2color;
+        }
+        p{
+            text-align: center;
+        }
+        a{
+            display: flex;
+            justify-content: center;
+            border-bottom: 1px solid lightgrey;
+            color: $titlecolor;
+            width: 26%
+        }
+        > section{
+            @include column(6vh);
+        }
+        > section > aside{
+            @include column (2vh);
+            align-items: center;
+        }
+    }
+
+    /* quote */
+    .quote{
+        width: 100%;
+        align-items: center;
+        row-gap: 8vh;
+        form{
+            background-color: $titlecolor;
+            @include column(2vh);
+            padding: 14vh 3vh;
+        }
+        input,select{
+            padding: 2vh 4vh;
+        }
+        select{
+            background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px;
+            appearance: none;
+            color: dimgray;
+            background-color: whitesmoke;
+        }
+        padding: 6vh 0 0 0;
+    }
+    .left{
+        @include column(3vh);
+        h5{
+            font-size: 1.4rem;
+            font-weight: 900;
+        }
+        h6{
+            font-size: .8rem;
+            font-weight: 900;
+        }
+        > section {
+            @include column (2vh);
+        }
+    }
+    .left, .right{
+        width: 85%;
+    }
+    /* pricing plan*/
+    .pricing{
+        strong{
+            color: $bg2color;
+            font-size: 2rem;
+        }
+
+        span{
+            font-size: 23px;
+            font-weight: 700;
+        }
+        p{
+            font-size: 20px;
+            padding: 4vh;
+            font-weight: 600;
+        }
+        a{
+            background-color: $titlecolor;
+            width: 40%;
+            height: 5vh;
+            @include center;
+            display: flex;
+            color: whitesmoke;
+        }
+        > section{
+            h2{
+                width: 100%;
+                height: 12vh;
+                background-color: $titlecolor;
+                display: flex;
+                @include center;
+            }
+        }
+        > section > aside{
+            background-color: $bg1color;
+            align-items: center;
+            padding-bottom: 5vh;
+ 
+        }
+        > article{
+            padding-bottom: 0;
+        }
+        row-gap: 5vh;
+    }
+    
+
+}

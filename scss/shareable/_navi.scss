@@ -1,5 +1,217 @@
 @media (min-width: $mobileScreen) {
   
+<<<<<<< HEAD
+    body > aside,
+    body {
+      @include column(0);
+    }
+    
+    body > nav > aside,
+    body > aside,
+    body > aside > ul,
+    body > aside li {
+      @include center;
+    }
+    main {
+      flex-wrap: wrap;
+    }
+    body > aside {
+      flex-wrap: wrap;
+      background-color: #1F1F2E;
+      row-gap: 2vh;
+      width: 100%;
+      height: 15vh;
+      color: whitesmoke;
+    }
+    body > aside > ul {
+      display: flex;
+      column-gap: 1vh;
+      width: 90%;
+      font-weight: 600;
+    }
+    body > aside > ul:last-child {
+      width: 50%;
+    }
+    body > aside li {
+      display: flex;
+      column-gap: 10px;
+      width: 100%;
+      list-style: none;
+    }
+    body aside a {
+      font-size: 15px;
+      color: whitesmoke;
+      text-decoration: none;
+    }
+    body aside i {
+      text-decoration: none;
+    }
+    body > aside [class*="fa-"] {
+      font-size: 18px;
+    }
+    body > aside span {
+      text-align: center;
+      width: 10%;
+    }
+    /* NAV  */
+    body > nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      padding-left: 2%;
+      height: 10vh;
+      width: 95%;
+    }
+    nav > a,
+    nav > ul {
+      display: none;
+    }
+    body > nav > aside {
+      display: flex;
+      column-gap: 1vh;
+      color: orangered;
+    }
+    body > nav i  {
+      font-size: 30px;
+    }
+    body > nav h2 {
+      font-size: 30px;
+      font-weight: 800;
+    }
+    details {
+      width: 100%;
+      text-align: right;
+      position: absolute;
+  
+      cursor: pointer;
+    }
+    details > ul {
+      background-color: white;
+      width: 100%;
+      position: absolute;
+    }
+    details li {
+      display: flex;
+    }
+    details a {
+      width: 100%;
+      padding: 5%;
+      text-align: left;
+      color: gray;
+      font-size: 20px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: .5s;
+    }
+    details a:hover{
+      color: whitesmoke;
+      background-color: orangered;
+    }
+    summary {
+      border: 1px solid gainsboro;
+      padding: 2% 3%;
+      font-size: 26px;
+      color: dimgray;
+    }
+   
+  }
+  @media (min-width: $tabletScreen) {
+    body {
+      > aside {
+        height: 8vh;
+        > ul {
+          width: 50%;
+          column-gap: 0;
+        }
+        > ul:last-child {
+          width: 30%;
+        }
+        span {
+          text-align: left;
+        }
+        li {
+          width: 80%;
+        }
+      }
+    }
+  }
+  @media (min-width: $desktopScreen) {
+    body {
+      > nav {
+        justify-content: space-between;
+      }
+      width: 100%;
+      > aside {
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: row;
+        > ul {
+          width: 35%;
+        }
+        > ul:last-child {
+          width: 15%;
+        }
+        li {
+          width: 50%;
+        }
+      }
+      > nav {
+        height: 10vh;
+      }
+    }
+    // NAV 
+    nav {
+      > ul {
+        display: flex;
+        @include center;
+        width: 30%;
+        height: 100%;
+        > li {
+          display: flex;
+          @include center;
+          width: 100%;
+          height: 100%;
+        }
+        a {
+          display: flex;
+          @include center;
+          width: 100%;
+          height: 100%;
+          color: black;
+          font-weight: 600;
+          text-decoration: none;
+          font-size: 20px;
+          transition: .5s;
+        }
+        a:hover {
+          color: whitesmoke;
+          background-color: orangered;
+  
+        }
+      }
+      > a {
+        display: flex;
+        @include center;
+        width: 15%;
+        padding: 1% 0;
+        font-weight: 600;
+        transition: .5s;
+        background-color: orangered;
+        color: white;
+        text-decoration: none;
+      }
+      > a:hover {
+        background-color: whitesmoke;
+        color: orangered;
+      }
+    }
+    details {
+      display: none;
+    }
+    // NAV END 
+  }
+=======
   body > aside,
   body {
     @include column(0);
@@ -210,3 +422,4 @@
   }
   // NAV END 
 }
+>>>>>>> 376900601fee15b613c9d7315e6316565113c26f

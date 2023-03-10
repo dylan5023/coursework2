@@ -1,0 +1,223 @@
+@media (min-width:$tabletScreen){
+    /* footer */
+    footer{
+        align-items: center;
+        input[type=submit]:hover{
+            background-image: url("https://images.pexels.com/photos/5898313/pexels-photo-5898313.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: 1px solid transparent;
+            color: transparent;
+            transition: .7s;
+        }
+    }
+    .social{
+        width: 100%;
+        row-gap: 0;
+        > ul {
+            width: 80%;
+            justify-content: flex-end;
+
+        }
+        li{
+            padding: 0 2%;
+        }
+        > p{
+            text-align: unset;
+            display: flex;
+            justify-content: flex-start;
+            width: 82%;
+            
+        }
+        a:hover{
+            color: $titlecolor;
+        }
+    }
+    
+
+    .form{
+        flex-direction: row;
+        align-items: flex-start;
+        width: 85%;
+        justify-content: center;
+        column-gap: 2vh;
+        h3{
+            width: 50%;
+        }
+        > aside li{
+            padding-bottom: 1vh;
+        }
+        > aside:nth-child(2) > h3{
+            width: 100%;
+        }
+        > aside:nth-child(3){
+            width: 50%;
+        }
+        > aside:nth-child(2){
+            width: 25%;
+        }
+        > aside:nth-child(1){
+            width: 25%;
+        }
+        
+    }
+    .network{
+        > a{
+            width: 3vh;
+            height: 3vh;
+        }
+        a:hover{
+            background-color: whitesmoke;
+            color: $bg2color;
+            margin: 0 1vh;
+            width: 6vh;
+            height: 4vh;
+            font-size: 20px;
+            border: 2px solid $bg2color;
+            transition: .3s;
+        }
+        
+    }
+    /* nav */
+    body {
+        > aside {
+        height: 8vh;
+        > ul {
+            width: 50%;
+            column-gap: 0;
+        }
+        > ul:last-child {
+            width: 30%;
+        }
+        span {
+            text-align: left;
+        }
+        li {
+            width: 80%;
+        }
+        }
+    }
+    /* pricing */
+    .pricing{
+        > section{
+            flex-direction: row;
+            column-gap: 3vh;
+            h2{
+                height: 7vh;
+            }
+            p{
+                padding: 3vh;
+            }
+            a{
+                width: 70%;
+                height: 4vh;
+                border: 1px solid $titlecolor;
+            }
+            li{
+                padding: 1vh;
+            }
+        }
+        a:hover{
+            background-color: whitesmoke;
+            color: $titlecolor;
+            border: 1px solid $titlecolor;
+        }
+        
+    }
+    /* quote */
+    .right > form{
+        padding: 14vh 4vh;
+    }
+    .quote{
+        > .left > section{
+            flex-direction: row;
+            width: 90%;
+            justify-content:space-between;
+        }
+    }
+
+    /* services */
+    .services{
+        > section{
+            flex-direction: row;
+            flex-wrap: wrap;
+            column-gap: 3vh;
+            > aside{
+                width: 46%;
+            }
+            a{
+                width: 32%;
+            }
+        }
+        a:hover{
+            color: $bg2color;
+            transition: 1s;
+            border-bottom: none;
+            font-weight: 600;
+        }
+    }
+    [class*=plane]:hover{
+        animation-name: plane;
+        animation-duration: 3s;
+        animation-timing-function: ease-in;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        transition: 4s;
+        font-size: 50px;
+        cursor: grab;
+
+    }
+    [class*=ship]:hover{
+        animation-name: ship;
+        animation-duration: 4s;
+        animation-timing-function: ease-in;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        transition: 8s;
+        font-size: 50px;
+        cursor: grab;
+    }
+    [class*=truck]:hover{
+        animation-name: truck;
+        animation-duration: 3s;
+        animation-timing-function: ease-in;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        transition: 4s;
+        font-size: 50px;
+        cursor: grab;
+    }
+    [class*=store]:hover{
+        transition: 4s;
+        font-size: 50px;
+        cursor: grab;
+    }
+}
+
+@keyframes plane{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(150px);
+    }
+}
+
+@keyframes ship{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(5px);
+    }
+}
+
+@keyframes truck{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(150px);
+    } 
+}
