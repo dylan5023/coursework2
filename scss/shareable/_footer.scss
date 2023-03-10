@@ -34,7 +34,6 @@
         }
     }
 
-
 }
 @media (min-width: $tabletScreen) {
     //* tablet footer*//
@@ -117,12 +116,10 @@
         }
         
     }
-
 }
 
+//* desktop footer *//
 @media (min-width: $desktopScreen) {
-
-    //* desktop footer *//
     .social{
         flex-direction: row;
         >p{
@@ -171,5 +168,4 @@
         }
         
     }
-
 }

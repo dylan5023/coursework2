@@ -1,0 +1,230 @@
+@media (min-width: $tabletScreen) {
+    .row {
+        > article {
+            small {
+                font-size: 23px;
+            }
+    
+            h3 {
+                font-size: 45px;
+            }
+        }
+    }
+
+    .about article,
+    .choose-us article {
+        
+        small {
+            font-size: 16px;
+        }
+    
+        h3 {
+            font-size: 40px;
+        }
+    }
+
+    // HEADER
+    header {
+        h1 {
+            width: 100%;
+            font-size: 60px;
+        }
+
+        h3 {
+            font-size: 30px;
+        }
+
+        form {
+            input {
+                padding: 3%;
+                width: 50%;
+            }
+
+            [type="submit"] {
+                width: 15%;
+            }
+        }
+    }
+
+    // ABOUT
+    .about {
+        > figure {
+            > figcaption {
+                height: 8vh;
+            }
+        }
+
+        a {
+            font-size: 20px;
+        }
+
+        a:hover {
+            cursor: pointer;
+            color: orangered;
+
+            i {
+                color: orangered;
+                background-color: whitesmoke;
+            }
+        }
+
+        i {
+            width: 5vh;
+            height: 5vh;
+            border: 3px solid orangered;
+            outline: 10px solid rgb(255, 209, 171);
+        }
+    }
+
+    // CHOOSE-US
+    .choose-us {
+        > figure {
+            row-gap: 3vh;
+            padding-bottom: 4vh;
+        }
+
+        a {
+            width: 20%;
+            padding: 1.5vw;
+            transition: .6s;
+        }
+
+        a:hover {
+            cursor: pointer;
+            background-color: gainsboro;
+            color: orangered;
+        }
+    }
+
+    // TEAM
+    .team {
+        > aside {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            width: 100%;
+        }
+
+        img {
+            height: 70%;
+        }
+
+        figure {
+            width: 30vh;
+            height: 40vh;
+            overflow: hidden;
+        }
+
+        figcaption {
+            width: 100%;
+            height: 30%;
+            overflow-y: hidden;
+            > aside {
+                z-index: 1;
+            }
+
+
+            &:hover ul {
+                cursor: pointer;
+                height: 140%;
+                width: 100%;
+                background-color: orangered;
+                font-size: 35px;
+                // visibility: visible;
+            }
+
+            &:hover aside {
+                display: none;
+            }
+        }
+
+        ul {
+            z-index: 2;
+            position: absolute;
+            height: 0;
+            transition: .6s;
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 4vw;
+            width: 100%;
+            bottom: -25%;
+            // font-size: 0px;
+            // visibility: hidden;
+        }
+
+        a {
+            display: flex;
+            @include center;
+            width: 5vh;
+            height: 5vh;
+            border: 2px solid black;
+            border-radius: 50px;
+            color: black;
+        }
+        
+        i {
+            color: black;
+            // transition: .1s;
+            
+            &:hover {
+                color: white;
+                background-color: black;
+                width: 100%;
+                height: 100%;
+                border-radius: 50px;
+                display: flex;
+                @include center;
+            }
+        }
+
+        strong {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+    
+    // BLOG
+    .blog {
+        width: 70vh;
+        > aside {
+            flex-direction: row;
+            column-gap: 3vh;
+            width: 90vw;
+        }
+
+        .first-block,
+        .second-block {
+            > img {
+                height: 20vh;
+            }
+
+            > figcaption {
+                min-height: 40vh;
+            }
+        }
+
+        section {
+            width: 80%;
+            > figure,
+            > article {
+                column-gap: 1vh;
+            }
+        }
+
+        a {
+            width: 14vw;
+        }
+
+        a:hover {
+            cursor: pointer;
+            color: whitesmoke;
+            background-color: orangered;
+            padding: 3%;
+        }
+    }
+}
