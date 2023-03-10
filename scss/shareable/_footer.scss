@@ -33,10 +33,10 @@
             justify-content: space-around;
         }
     }
-}
 
-//* tablet footer*//
+}
 @media (min-width: $tabletScreen) {
+    //* tablet footer*//
     footer{
         align-items: center;
         input[type=submit]:hover{

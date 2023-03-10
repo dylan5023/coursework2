@@ -2,7 +2,10 @@
 @import 'mixins';
 @import 'normalize';
 
+@import 'shareable/headerAbout';
+@import 'shareable/footer';
 @import 'devices/mobile';
 @import 'devices/tablet';
 @import 'devices/desktop';
 @import 'shareable/footer';
+@import 'shareable/navi';
